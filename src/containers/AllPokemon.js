@@ -6,9 +6,13 @@ const AllPokemon = () => {
 
   useEffect(() => {
     getPokemons().then((data) => {
-      console.log(data);
-    }, []);
-  });
+      setPokemons(data);
+    });
+  }, []);
+
+  const renderPokemonCards = () => {
+    Object.entries(pokemons)[3].map((pokemon) => {});
+  };
 
   return (
     <div>
@@ -18,3 +22,5 @@ const AllPokemon = () => {
 };
 
 export default AllPokemon;
+
+// Object.entries(pokemons)[3]
