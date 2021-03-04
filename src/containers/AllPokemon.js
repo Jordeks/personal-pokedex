@@ -16,7 +16,7 @@ const AllPokemon = () => {
       <div>
         {Object.entries(pokemons)[3] &&
           Object.entries(pokemons)[3][1].map((pokemon, index) => {
-            return <PokemonCard key={index} {...pokemon} id={index} />;
+            return <PokemonCard key={index} {...pokemon} id={index + 1} />;
           })}
       </div>
     </div>
@@ -24,5 +24,3 @@ const AllPokemon = () => {
 };
 
 export default AllPokemon;
-
-// Object.entries(pokemons)[3]
