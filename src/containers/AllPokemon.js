@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PokemonCard from '../components/PokemonCard';
 import { getPokemons } from '../services/pokemons';
 
 const AllPokemon = () => {
@@ -10,13 +11,14 @@ const AllPokemon = () => {
     });
   }, []);
 
-  const renderPokemonCards = () => {
-    Object.entries(pokemons)[3].map((pokemon) => {});
-  };
-
   return (
     <div>
-      <div></div>I will hold allllllll of the PokemonCard's!!
+      <div>
+        {Object.entries(pokemons)[3] &&
+          Object.entries(pokemons)[3][1].map((pokemon, index) => {
+            return <PokemonCard key={index} {...pokemon} id={index} />;
+          })}
+      </div>
     </div>
   );
 };
