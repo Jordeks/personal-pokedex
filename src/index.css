@@ -13,5 +13,13 @@ body {
   padding: 3rem;
   text-align: center; }
 
-.App {
-  background-color: blue; }
+.card {
+  height: 20rem;
+  width: 20rem;
+  background-color: blue;
+  margin: 2rem; }
+  .card__title {
+    color: white; }
+  .card__img {
+    height: 10rem;
+    width: 10rem; }

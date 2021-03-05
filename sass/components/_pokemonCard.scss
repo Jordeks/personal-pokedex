@@ -1,0 +1,15 @@
+.card {
+  height: 20rem;
+  width: 20rem;
+  background-color: blue;
+  margin: 2rem;
+
+  &__title {
+    color: white;
+  }
+
+  &__img {
+    height: 10rem;
+    width: 10rem;
+  }
+}
