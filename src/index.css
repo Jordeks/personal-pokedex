@@ -15,7 +15,6 @@ body {
 
 .card {
   height: 30rem;
-  width: 30rem;
   background-color: #3c5aa6;
   margin: 2rem;
   border-radius: 1rem; }
@@ -27,4 +26,8 @@ body {
     width: 25rem; }
 
 .cards {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  max-width: 90vh; }
