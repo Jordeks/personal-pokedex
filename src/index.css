@@ -14,12 +14,17 @@ body {
   text-align: center; }
 
 .card {
-  height: 20rem;
-  width: 20rem;
-  background-color: blue;
-  margin: 2rem; }
+  height: 30rem;
+  width: 30rem;
+  background-color: #3c5aa6;
+  margin: 2rem;
+  border-radius: 1rem; }
   .card__title {
-    color: white; }
+    color: #ebebeb;
+    font-size: 4rem; }
   .card__img {
-    height: 15rem;
-    width: 15rem; }
+    height: 25rem;
+    width: 25rem; }
+
+.cards {
+  display: flex; }
