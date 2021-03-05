@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // defines what 1rem is
+  font-size: 62.5%; //1rem = 10px 10px/16px = 62.5%
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  text-align: center;
+}
+
+.App {
+  background-color: blue;
+}
