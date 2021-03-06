@@ -22,7 +22,9 @@ body {
   transition: all 0.2s; }
   .card__title {
     color: #ebebeb;
-    font-size: 4rem; }
+    font-size: 4rem;
+    font-family: "Miltonian Tattoo";
+    text-transform: capitalize; }
   .card__img {
     height: 25rem;
     width: 25rem; }

@@ -9,6 +9,8 @@
   &__title {
     color: $white;
     font-size: 4rem;
+    font-family: $title;
+    text-transform: capitalize;
   }
 
   &__img {
