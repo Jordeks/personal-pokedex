@@ -11,7 +11,8 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  text-align: center; }
+  text-align: center;
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(238, 238, 238, 0.8)), url(./images/palm-leaf.png); }
 
 .primary-heading {
   font-family: "Miltonian Tattoo";
