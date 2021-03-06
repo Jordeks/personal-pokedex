@@ -13,6 +13,15 @@ body {
   padding: 3rem;
   text-align: center; }
 
+.primary-heading {
+  font-family: "Miltonian Tattoo";
+  font-size: 8rem;
+  padding: 2rem;
+  background-image: linear-gradient(to right, #ffcb05, #c7a008);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #2a75bb; }
+
 .card {
   height: 30rem;
   background-color: #3c5aa6;
