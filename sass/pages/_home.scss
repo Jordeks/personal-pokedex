@@ -2,5 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
+  min-width: 90vh;
 }

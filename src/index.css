@@ -17,7 +17,8 @@ body {
   height: 30rem;
   background-color: #3c5aa6;
   margin: 2rem;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  flex: 0 0 24%; }
   .card__title {
     color: #ebebeb;
     font-size: 4rem; }
@@ -29,5 +30,5 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
-  max-width: 90vh; }
+  align-items: center;
+  min-width: 90vh; }
