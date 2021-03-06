@@ -18,13 +18,21 @@ body {
   background-color: #3c5aa6;
   margin: 2rem;
   border-radius: 1rem;
-  flex: 0 0 24%; }
+  flex: 0 0 24%;
+  transition: all 0.2s; }
   .card__title {
     color: #ebebeb;
     font-size: 4rem; }
   .card__img {
     height: 25rem;
     width: 25rem; }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(14, 17, 17, 0.6);
+    cursor: pointer; }
+  .card:active, .card:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35); }
 
 .cards {
   display: flex;
