@@ -8,9 +8,9 @@ const App = () => {
       <Router>
         <h1 className='primary-heading'>Personal Pokedex!</h1>
         <AllPokemon />
-        <Switch>
-          <Route path='/show' component={Pokemon} />
-        </Switch>
+        <Route path='/show' component={Pokemon}>
+          <Pokemon />
+        </Route>
       </Router>
     </div>
   );
