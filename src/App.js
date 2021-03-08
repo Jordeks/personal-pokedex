@@ -7,10 +7,10 @@ const App = () => {
     <div className='App'>
       <Router>
         <h1 className='primary-heading'>Personal Pokedex!</h1>
-        <AllPokemon />
-        <Route path='/show' component={Pokemon}>
-          <Pokemon />
-        </Route>
+        <Switch>
+          <Route path='/show' component={Pokemon} />
+          <Route path='/' component={AllPokemon} />
+        </Switch>
       </Router>
     </div>
   );
