@@ -8,10 +8,10 @@ const Pokemon = () => {
   const [pokemon, setPokemon] = useState([]);
 
   useEffect(() => {
-    getPokemon(location.id).then((data) => {
+    getPokemon(location.pathname).then((data) => {
       setPokemon(data);
     });
-  }, [location.id]);
+  }, [location.pathname]);
 
   return (
     <div>
