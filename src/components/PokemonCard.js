@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { getPokemon } from '../services/pokemon';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const PokemonCard = (props) => {

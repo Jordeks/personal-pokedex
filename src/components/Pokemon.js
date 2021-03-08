@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 const Pokemon = () => {
   const location = useLocation();
-  console.log(location);
+
   const [pokemon, setPokemon] = useState([]);
 
   useEffect(() => {
@@ -12,21 +12,20 @@ const Pokemon = () => {
       setPokemon(data);
     });
   }, [location.pathname]);
+  const { id, name, height, weight, base_experience } = pokemon;
 
   return (
     <div>
-      <h2>{pokemon && pokemon.name}</h2>
+      <h2>{name}</h2>
       <img
         className='card__img'
-        src={`https://pokeres.bastionbot.org/images/pokemon/${
-          pokemon && pokemon.id
-        }.png`}
+        src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`}
         alt='pokemon-pic'
       />
       <ul>
-        <li>Height: {pokemon && pokemon.height}</li>
-        <li>Weight: {pokemon && pokemon.weight}</li>
-        <li>Base XP:{pokemon && pokemon.base_experience}</li>
+        <li>Height: {height}</li>
+        <li>Weight: {weight}</li>
+        <li>Base XP:{base_experience}</li>
       </ul>
 
       <ul>
