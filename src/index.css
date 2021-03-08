@@ -60,13 +60,38 @@ body {
   transform: translate(-50%, -50%);
   border: 1rem solid #ffcb05;
   border-radius: 3rem; }
+  .pokeCard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .pokeCard__name {
     text-transform: capitalize;
     font-size: 3rem;
-    text-align: start; }
+    text-align: start;
+    flex: 0 0 28%; }
   .pokeCard__stats {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0;
+    font-size: 1.15rem;
+    text-transform: capitalize; }
+  .pokeCard__item {
+    margin-left: 0.3rem;
+    font-size: 1.5rem; }
+  .pokeCard__imgContainer {
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    border: 4px solid #999;
+    margin: 2rem 0; }
+  .pokeCard__img {
+    height: 35rem;
+    width: 35rem;
+    padding: 2rem;
+    margin-top: 2rem; }
 
 .cards {
   display: flex;

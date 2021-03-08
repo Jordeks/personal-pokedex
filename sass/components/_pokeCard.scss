@@ -7,17 +7,48 @@
   border: 1rem solid $yellow;
   border-radius: 3rem;
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__name {
     text-transform: capitalize;
     font-size: 3rem;
     text-align: start;
+    flex: 0 0 28%;
   }
 
   &__stats {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex: 1 0;
+
+    font-size: 1.15rem;
+    text-transform: capitalize;
   }
 
   &__item {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+  }
+
+  &__imgContainer {
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    border: 4px solid $gray-dark-1;
+    margin: 2rem 0;
+  }
+
+  &__img {
+    height: 35rem;
+    width: 35rem;
+    padding: 2rem;
+    margin-top: 2rem;
   }
 }
