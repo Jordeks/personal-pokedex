@@ -8,7 +8,7 @@ const App = () => {
       <Router>
         <h1 className='primary-heading'>Personal Pokedex!</h1>
         <Switch>
-          <Route path='/show' component={Pokemon} />
+          <Route path='/pokemon/:id' component={Pokemon} />
           <Route path='/' component={AllPokemon} />
         </Switch>
       </Router>

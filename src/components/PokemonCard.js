@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { getPokemon } from '../services/pokemon';
 import { NavLink } from 'react-router-dom';
 
 const PokemonCard = (props) => {
-  const fetchPokemon = () => {
+  const [pokemon, setPokemon] = useState([]);
+
+  useEffect(() => {
     getPokemon(props.id).then((data) => {
-      console.log(data);
+      setPokemon(data);
     });
-  };
+  }, []);
 
   return (
-    <NavLink className='card' to='/show'>
+    <NavLink
+      className='card'
+      to={{ pathname: `/pokemon/${props.id}`, pokemon: { ...pokemon } }}
+    >
       <h3 className='card__title'>{props.name}</h3>
       <img
         className='card__img'
@@ -21,3 +26,11 @@ const PokemonCard = (props) => {
 };
 
 export default PokemonCard;
+
+// const [pokemon, setPokemon] = useState([]);
+
+// useEffect(() => {
+//   getPokemon(props.id).then((data) => {
+//     console.log(data);
+//   });
+// }, []);

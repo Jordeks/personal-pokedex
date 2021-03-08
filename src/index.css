@@ -12,7 +12,8 @@ body {
   box-sizing: border-box;
   padding: 3rem;
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(238, 238, 238, 0.8)), url(./images/palm-leaf.png); }
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(238, 238, 238, 0.8)), url(./images/palm-leaf.png);
+  background-size: contain; }
 
 .primary-heading {
   font-family: "Miltonian Tattoo";
@@ -29,6 +30,7 @@ body {
   margin: 2rem;
   border-radius: 1rem;
   flex: 0 0 24%;
+  text-decoration: none;
   transition: all 0.2s; }
   .card__title {
     color: #ebebeb;
