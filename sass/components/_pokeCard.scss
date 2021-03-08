@@ -1,0 +1,7 @@
+.pokeCard {
+  background-color: red;
+  padding: 5rem;
+  height: 85rem;
+  width: 80rem;
+  @include absCenter;
+}

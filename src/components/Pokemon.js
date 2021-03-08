@@ -12,21 +12,22 @@ const Pokemon = () => {
       setPokemon(data);
     });
   }, [location.pathname]);
+
   const { id, name, height, weight, base_experience } = pokemon;
 
   return (
-    <div>
-      <h2>{name}</h2>
+    <div className='pokeCard'>
+      <h2 className='pokeCard__name'>{name}</h2>
       <img
-        className='card__img'
+        className='poekCard__img'
         src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`}
         alt='pokemon-pic'
       />
-      <ul>
-        <li>Height: {height}</li>
-        <li>Weight: {weight}</li>
-        <li>Base XP:{base_experience}</li>
-      </ul>
+      <div>
+        <span>Height: {height}</span>
+        <span>Weight: {weight}</span>
+        <span>Base XP:{base_experience}</span>
+      </div>
 
       <ul>
         Abilities:

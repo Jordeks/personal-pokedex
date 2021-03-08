@@ -48,6 +48,16 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35); }
 
+.pokeCard {
+  background-color: red;
+  padding: 5rem;
+  height: 85rem;
+  width: 80rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
