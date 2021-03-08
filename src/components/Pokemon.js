@@ -1,57 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getPokemon } from '../services/pokemon';
+import { useLocation } from 'react-router-dom';
 
-const Pokemon = (props) => {
-  // console.log(props.location.pokemon && props.location.pokemon);
+const Pokemon = () => {
+  const location = useLocation();
+  console.log(location);
+  const [pokemon, setPokemon] = useState([]);
 
-  const {
-    id,
-    name,
-    height,
-    base_experience,
-    weight,
-    abilities,
-    stats,
-    types,
-  } = props.location.pokemon;
-
-  console.log(types);
+  useEffect(() => {
+    getPokemon(location.id).then((data) => {
+      setPokemon(data);
+    });
+  }, [location.id]);
 
   return (
     <div>
-      <h2>{name}</h2>
+      <h2>{pokemon && pokemon.name}</h2>
       <img
         className='card__img'
-        src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`}
+        src={`https://pokeres.bastionbot.org/images/pokemon/${
+          pokemon && pokemon.id
+        }.png`}
         alt='pokemon-pic'
       />
       <ul>
-        <li>{height}</li>
-        <li>{weight}</li>
-        <li>{base_experience}</li>
+        <li>Height: {pokemon && pokemon.height}</li>
+        <li>Weight: {pokemon && pokemon.weight}</li>
+        <li>Base XP:{pokemon && pokemon.base_experience}</li>
       </ul>
-      {abilities.map((ability) => {
-        return (
-          <ul>
-            <li>{ability['ability']['name']}</li>
-          </ul>
-        );
-      })}
-      {stats.map((stat) => {
-        return (
-          <ul>
-            <li>
-              {stat['stat']['name']}:<span>{stat.base_stat}</span>
-            </li>
-          </ul>
-        );
-      })}
-      {types.map((type) => {
-        return (
-          <ul>
-            <li>{type['type']['name']}</li>
-          </ul>
-        );
-      })}
+
+      <ul>
+        Abilities:
+        {pokemon.abilities &&
+          pokemon.abilities.map((ability, index) => {
+            return <li key={index}>{ability['ability']['name']}</li>;
+          })}
+      </ul>
+      <ul>
+        Stats:
+        {pokemon.stats &&
+          pokemon.stats.map((stat, index) => {
+            return (
+              <li key={index}>
+                {stat['stat']['name']}:<span>{stat.base_stat}</span>
+              </li>
+            );
+          })}
+      </ul>
+      <ul>
+        Types:
+        {pokemon.types &&
+          pokemon.types.map((type, index) => {
+            return <li key={index}>{type['type']['name']}</li>;
+          })}
+      </ul>
     </div>
   );
 };
