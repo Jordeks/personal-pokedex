@@ -20,17 +20,10 @@ const PokemonCard = (props) => {
       <img
         className='card__img'
         src={`https://pokeres.bastionbot.org/images/pokemon/${props.id}.png`}
+        alt='pokemon-pic'
       />
     </NavLink>
   );
 };
 
 export default PokemonCard;
-
-// const [pokemon, setPokemon] = useState([]);
-
-// useEffect(() => {
-//   getPokemon(props.id).then((data) => {
-//     console.log(data);
-//   });
-// }, []);
