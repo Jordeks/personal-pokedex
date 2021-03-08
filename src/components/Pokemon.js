@@ -17,7 +17,22 @@ const Pokemon = () => {
 
   return (
     <div className='pokeCard'>
-      <h2 className='pokeCard__name'>{name}</h2>
+      <div>
+        <h2 className='pokeCard__name'>{name}</h2>
+        <div>
+          {pokemon.stats &&
+            pokemon.stats.map((stat, index) => {
+              return (
+                <p key={index}>
+                  {stat['stat']['name']}:
+                  <span>
+                    <strong>{stat.base_stat}</strong>
+                  </span>
+                </p>
+              );
+            })}
+        </div>
+      </div>
       <img
         className='poekCard__img'
         src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`}
@@ -34,17 +49,6 @@ const Pokemon = () => {
         {pokemon.abilities &&
           pokemon.abilities.map((ability, index) => {
             return <li key={index}>{ability['ability']['name']}</li>;
-          })}
-      </ul>
-      <ul>
-        Stats:
-        {pokemon.stats &&
-          pokemon.stats.map((stat, index) => {
-            return (
-              <li key={index}>
-                {stat['stat']['name']}:<span>{stat.base_stat}</span>
-              </li>
-            );
           })}
       </ul>
       <ul>

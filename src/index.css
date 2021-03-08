@@ -13,7 +13,8 @@ body {
   padding: 3rem;
   text-align: center;
   background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(238, 238, 238, 0.8)), url(./images/palm-leaf.png);
-  background-size: contain; }
+  background-size: contain;
+  font-family: "Lato", sans-serif; }
 
 .primary-heading {
   font-family: "Miltonian Tattoo";
@@ -49,14 +50,23 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35); }
 
 .pokeCard {
-  background-color: red;
+  background-color: #ebebeb;
   padding: 5rem;
   height: 85rem;
-  width: 80rem;
+  width: 75rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  border: 1rem solid #ffcb05;
+  border-radius: 3rem; }
+  .pokeCard__name {
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: start; }
+  .pokeCard__stats {
+    display: flex;
+    justify-content: space-between; }
 
 .cards {
   display: flex;

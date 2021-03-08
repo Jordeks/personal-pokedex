@@ -1,7 +1,23 @@
 .pokeCard {
-  background-color: red;
+  background-color: $white;
   padding: 5rem;
   height: 85rem;
-  width: 80rem;
+  width: 75rem;
   @include absCenter;
+  border: 1rem solid $yellow;
+  border-radius: 3rem;
+
+  &__name {
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: start;
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+  }
 }
