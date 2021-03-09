@@ -94,6 +94,65 @@
   }
 
   &--bug {
-    background-color: green;
+    background-image: linear-gradient(to right, $green, $dark-green);
+  }
+
+  &--grass {
+    background-image: linear-gradient(to right, $green, $dark-green);
+  }
+
+  &--fire {
+    background-image: linear-gradient(to right, $red, $dark-red);
+  }
+
+  &--water {
+    background-image: linear-gradient(to right, $blue, $dark-blue-card);
+  }
+
+  &--ice {
+    background-image: linear-gradient(to right, $blue, $dark-blue-card);
+  }
+
+  &--electric {
+    background-image: linear-gradient(to right, $yell, $dark-yell);
+  }
+
+  &--psychic {
+    background-image: linear-gradient(to right, $purple, $dark-purple);
+  }
+  &--fairy {
+    background-image: linear-gradient(to right, $purple, $dark-purple);
+  }
+  &--ghost {
+    background-image: linear-gradient(to right, $purple, $dark-purple);
+  }
+
+  &--fighting {
+    background-image: linear-gradient(to right, $yell, $dark-yell);
+  }
+  &--rock {
+    background-image: linear-gradient(to right, $yell, $dark-yell);
+  }
+  &--ground {
+    background-image: linear-gradient(to right, $yell, $dark-yell);
+  }
+
+  &--dark {
+    background-image: linear-gradient(to right, $yell, $dark-yell);
+  }
+  &--poison {
+    background-image: linear-gradient(to right, $yell, $dark-yell);
+  }
+
+  &--steel {
+    background-image: linear-gradient(to right, $yell, $dark-yell);
+  }
+
+  &--dragon {
+    background-image: linear-gradient(to right, $yell, $dark-yell);
+  }
+
+  &--normal {
+    background-image: linear-gradient(to right, $yell, $dark-yell);
   }
 }
