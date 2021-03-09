@@ -142,21 +142,23 @@ body {
   .pokeCard--ghost {
     background-image: linear-gradient(to right, #b379f6, #9b15f4); }
   .pokeCard--fighting {
-    background-image: linear-gradient(to right, #ffd15c, #fcc55f); }
+    background-image: linear-gradient(to right, #c38e6f, #bd764c); }
   .pokeCard--rock {
-    background-image: linear-gradient(to right, #ffd15c, #fcc55f); }
+    background-image: linear-gradient(to right, #c38e6f, #bd764c); }
   .pokeCard--ground {
-    background-image: linear-gradient(to right, #ffd15c, #fcc55f); }
+    background-image: linear-gradient(to right, #c38e6f, #bd764c); }
   .pokeCard--dark {
-    background-image: linear-gradient(to right, #ffd15c, #fcc55f); }
+    background-image: linear-gradient(to right, #6c757d, #495057);
+    color: #ebebeb; }
   .pokeCard--poison {
-    background-image: linear-gradient(to right, #ffd15c, #fcc55f); }
+    background-image: linear-gradient(to right, #6c757d, #495057);
+    color: #ebebeb; }
   .pokeCard--steel {
-    background-image: linear-gradient(to right, #ffd15c, #fcc55f); }
+    background-image: linear-gradient(to right, #dee2e6, #adb5bd); }
   .pokeCard--dragon {
-    background-image: linear-gradient(to right, #ffd15c, #fcc55f); }
+    background-image: linear-gradient(to right, #c4a36e, #b89151); }
   .pokeCard--normal {
-    background-image: linear-gradient(to right, #ffd15c, #fcc55f); }
+    background-image: linear-gradient(to right, #f7f7f7, #eee); }
 
 .cards {
   display: flex;

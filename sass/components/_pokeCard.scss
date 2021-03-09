@@ -128,31 +128,33 @@
   }
 
   &--fighting {
-    background-image: linear-gradient(to right, $yell, $dark-yell);
+    background-image: linear-gradient(to right, $brown, $dark-brown);
   }
   &--rock {
-    background-image: linear-gradient(to right, $yell, $dark-yell);
+    background-image: linear-gradient(to right, $brown, $dark-brown);
   }
   &--ground {
-    background-image: linear-gradient(to right, $yell, $dark-yell);
+    background-image: linear-gradient(to right, $brown, $dark-brown);
   }
 
   &--dark {
-    background-image: linear-gradient(to right, $yell, $dark-yell);
+    background-image: linear-gradient(to right, $dark, $dark-dark);
+    color: $white;
   }
   &--poison {
-    background-image: linear-gradient(to right, $yell, $dark-yell);
+    background-image: linear-gradient(to right, $dark, $dark-dark);
+    color: $white;
   }
 
   &--steel {
-    background-image: linear-gradient(to right, $yell, $dark-yell);
+    background-image: linear-gradient(to right, $gray, $dark-gray);
   }
 
   &--dragon {
-    background-image: linear-gradient(to right, $yell, $dark-yell);
+    background-image: linear-gradient(to right, $gold, $dark-gold);
   }
 
   &--normal {
-    background-image: linear-gradient(to right, $yell, $dark-yell);
+    background-image: linear-gradient(to right, $gray-light-1, $gray-light-2);
   }
 }
