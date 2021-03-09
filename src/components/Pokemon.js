@@ -18,7 +18,11 @@ const Pokemon = () => {
   console.log(pokemon.types && pokemon.types[0].type['name']);
 
   return (
-    <div className='pokeCard'>
+    <div
+      className={`pokeCard pokeCard--${
+        pokemon.types && pokemon.types[0].type['name']
+      }`}
+    >
       <div className='pokeCard__header'>
         <h2 className='pokeCard__name'>{name}</h2>
         <div className='pokeCard__stats'>
@@ -42,24 +46,31 @@ const Pokemon = () => {
           alt='pokemon-pic'
         />
       </div>
-      <div>
+      <div className='pokeCard__basics'>
+        <span>NO. {id}</span>
         <span>Height: {height}</span>
         <span>Weight: {weight}</span>
         <span>Base XP:{base_experience}</span>
       </div>
 
-      <ul>
-        Abilities:
+      <ul className='pokeCard__abilities'>
         {pokemon.abilities &&
           pokemon.abilities.map((ability, index) => {
-            return <li key={index}>{ability['ability']['name']}</li>;
+            return (
+              <li className='pokeCard__ability' key={index}>
+                {ability['ability']['name']}
+              </li>
+            );
           })}
       </ul>
-      <ul>
-        Types:
+      <ul className='pokeCard__types'>
         {pokemon.types &&
           pokemon.types.map((type, index) => {
-            return <li key={index}>{type['type']['name']}</li>;
+            return (
+              <li className='pokeCard__type' key={index}>
+                {type['type']['name']}
+              </li>
+            );
           })}
       </ul>
     </div>

@@ -92,6 +92,39 @@ body {
     width: 35rem;
     padding: 2rem;
     margin-top: 2rem; }
+  .pokeCard__basics {
+    background-color: #f7f7f7;
+    margin-top: -2rem;
+    border: 2px solid #999;
+    color: #999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5rem; }
+  .pokeCard__abilities {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    height: 20rem;
+    margin: 1rem;
+    text-align: start; }
+  .pokeCard__ability {
+    padding: 2rem; }
+  .pokeCard__types {
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    height: 10rem;
+    margin: 1rem;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end; }
+  .pokeCard__type {
+    padding: 2rem; }
+  .pokeCard--bug {
+    background-color: green; }
 
 .cards {
   display: flex;

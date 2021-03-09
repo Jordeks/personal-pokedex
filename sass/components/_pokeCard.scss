@@ -51,4 +51,49 @@
     padding: 2rem;
     margin-top: 2rem;
   }
+
+  &__basics {
+    background-color: $gray-light-1;
+    margin-top: -2rem;
+    border: 2px solid $gray-dark-1;
+    color: $gray-dark-1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5rem;
+  }
+
+  &__abilities {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    height: 20rem;
+    margin: 1rem;
+    text-align: start;
+  }
+
+  &__ability {
+    padding: 2rem;
+  }
+
+  &__types {
+    list-style: none;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    height: 10rem;
+    margin: 1rem;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__type {
+    padding: 2rem;
+  }
+
+  &--bug {
+    background-color: green;
+  }
 }
