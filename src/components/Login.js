@@ -2,9 +2,11 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div>
-      I login the peeps
-    </div>
+    <form>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button type="submit" >Login</button>
+    </form>
   )
 }
 
