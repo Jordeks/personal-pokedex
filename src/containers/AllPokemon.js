@@ -13,7 +13,7 @@ const AllPokemon = () => {
   }, []);
 
   const morePokemon = () => {
-    getMorePokemons().then((data) => {
+    getMorePokemons(count + 19).then((data) => {
       setPokemons(data);
       setCount((prevCount) => {
         return prevCount + 20;
