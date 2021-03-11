@@ -4,6 +4,7 @@ import { getPokemons, getMorePokemons } from '../services/pokemons';
 
 const AllPokemon = () => {
   const [pokemons, setPokemons] = useState([]);
+  const [count, setCount] = useState(1);
 
   useEffect(() => {
     getPokemons().then((data) => {
@@ -14,14 +15,17 @@ const AllPokemon = () => {
   const morePokemon = () => {
     getMorePokemons().then((data) => {
       setPokemons(data);
+      setCount((prevCount) => {
+        return prevCount + 20;
+      });
     });
   };
-  console.log(pokemons);
+
   return (
     <div className='cards'>
-      {Object.entries(pokemons)[3] &&
-        Object.entries(pokemons)[3][1].map((pokemon, index) => {
-          return <PokemonCard key={index} {...pokemon} id={index + 1} />;
+      {pokemons['results'] &&
+        pokemons['results'].map((pokemon, index) => {
+          return <PokemonCard key={index} {...pokemon} id={count + index} />;
         })}
       <button onClick={morePokemon}>Next</button>
     </div>
