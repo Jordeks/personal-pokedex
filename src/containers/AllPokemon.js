@@ -21,12 +21,22 @@ const AllPokemon = () => {
     });
   };
 
+  const lessPokemon = () => {
+    getMorePokemons(count - 21).then((data) => {
+      setPokemons(data);
+      setCount((prevCount) => {
+        return prevCount - 20;
+      });
+    });
+  };
+
   return (
     <div className='cards'>
       {pokemons['results'] &&
         pokemons['results'].map((pokemon, index) => {
           return <PokemonCard key={index} {...pokemon} id={count + index} />;
         })}
+      <button onClick={lessPokemon}>Back</button>
       <button onClick={morePokemon}>Next</button>
     </div>
   );
