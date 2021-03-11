@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { login } from '../services/user';
 
 const Login = () => {
 
@@ -12,7 +13,17 @@ const Login = () => {
 
   const onSubmitHandler = (e) => {
     e.preventDefault()
-    console.log("I tried to login")
+    let credentials = { username: username, password: password }
+    login(credentials)
+      .then(response => {
+        if (response.error) {
+          alert(response.error)
+        } else {
+          alert("You're logged in!")
+          // history.push('/')
+        }
+      })
+      .catch(console.log)
     setUsername('')
     setPassword('')
   }
