@@ -31,14 +31,18 @@ const AllPokemon = () => {
   };
 
   return (
-    <div className='cards'>
-      {pokemons['results'] &&
-        pokemons['results'].map((pokemon, index) => {
-          return <PokemonCard key={index} {...pokemon} id={count + index} />;
-        })}
-      <button onClick={lessPokemon}>Back</button>
-      <button onClick={morePokemon}>Next</button>
-    </div>
+    <>
+      <div className='cards'>
+        {pokemons['results'] &&
+          pokemons['results'].map((pokemon, index) => {
+            return <PokemonCard key={index} {...pokemon} id={count + index} />;
+          })}
+      </div>
+      <div className='footer'>
+        <button onClick={lessPokemon}>Back</button>
+        <button onClick={morePokemon}>Next</button>
+      </div>
+    </>
   );
 };
 

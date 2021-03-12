@@ -160,6 +160,11 @@ body {
   .pokeCard--normal {
     background-image: linear-gradient(to right, #f7f7f7, #eee); }
 
+.footer {
+  background-color: red;
+  display: flex;
+  justify-content: space-around; }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
