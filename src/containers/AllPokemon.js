@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PokemonCard from '../components/PokemonCard';
+import Header from '../components/Header';
 import { getPokemons, getMorePokemons } from '../services/pokemons';
 
 const AllPokemon = () => {
@@ -32,6 +33,7 @@ const AllPokemon = () => {
 
   return (
     <>
+      <Header />
       <div className='cards'>
         {pokemons['results'] &&
           pokemons['results'].map((pokemon, index) => {
