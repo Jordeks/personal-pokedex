@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $gray-light-1;
+  box-shadow: 0 0.5rem 1rem rgba($black, 0.35);
+  height: 5rem;
+
+  &__link {
+    text-decoration: none;
+    color: $dark-blue;
+    font-size: 4rem;
+  }
+}

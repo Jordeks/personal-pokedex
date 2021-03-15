@@ -196,6 +196,18 @@ body {
   background-color: #f7f7f7;
   box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35); }
 
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f7f7;
+  box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35);
+  height: 5rem; }
+  .nav__link {
+    text-decoration: none;
+    color: #3c5aa6;
+    font-size: 4rem; }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
