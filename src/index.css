@@ -25,6 +25,22 @@ body {
   color: transparent;
   -webkit-text-stroke: 0.5px #2a75bb; }
 
+.btn {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: #ff4747; }
+  .btn__text {
+    z-index: 100;
+    color: #0e1111;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .card {
   height: 30rem;
   background-color: #3c5aa6;
@@ -162,25 +178,19 @@ body {
 
 .footer {
   height: 10rem;
-  background-color: blue;
   display: flex;
-  justify-content: space-around; }
-  .footer__btn {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    overflow: hidden;
-    color: white;
-    background-color: red; }
-  .footer__btn-img {
-    width: auto;
-    height: 110%;
-    margin-left: -10px;
-    margin-top: -3px; }
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f7f7f7; }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  min-width: 90vh; }
+  min-width: 90vh;
+  margin-bottom: 8rem; }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PokemonCard from '../components/PokemonCard';
 import { getPokemons, getMorePokemons } from '../services/pokemons';
-import Pokeball from '../images/pokeball.png';
 
 const AllPokemon = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -40,12 +39,11 @@ const AllPokemon = () => {
           })}
       </div>
       <div className='footer'>
-        <div className='footer__btn' onClick={lessPokemon}>
-          <img className='footer__btn-img' src={Pokeball} alt='pokeball' />
-          <span className='footer__btn-text'>Back</span>
+        <div className='btn' onClick={lessPokemon}>
+          <h3 className='btn__text'>Back</h3>
         </div>
-        <div className='footer__btn' onClick={morePokemon}>
-          Next
+        <div className='btn' onClick={morePokemon}>
+          <h3 className='btn__text'>Next</h3>
         </div>
       </div>
     </>

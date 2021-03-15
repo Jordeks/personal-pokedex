@@ -1,22 +1,11 @@
 .footer {
   height: 10rem;
-  background-color: blue;
   display: flex;
   justify-content: space-around;
-
-  &__btn {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    overflow: hidden;
-    color: white;
-    background-color: red;
-  }
-
-  &__btn-img {
-    width: auto;
-    height: 110%;
-    margin-left: -10px;
-    margin-top: -3px;
-  }
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $gray-light-1;
 }
