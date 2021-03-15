@@ -83,7 +83,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1rem solid #ffcb05;
-  border-radius: 3rem; }
+  border-radius: 3rem;
+  margin-top: 10rem; }
   .pokeCard__header {
     display: flex;
     justify-content: space-between;
@@ -202,7 +203,7 @@ body {
   align-items: center;
   background-color: #f7f7f7;
   box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35);
-  height: 5rem; }
+  height: 8rem; }
   .nav__link {
     text-decoration: none;
     color: #3c5aa6;
